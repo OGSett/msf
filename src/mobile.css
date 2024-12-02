@@ -1,0 +1,360 @@
+:root {
+    /* Main Colors */
+    --marine-blue: hsl(213, 96%, 18%);
+    --purplish-blue: hsl(243, 100%, 62%);
+    --pastel-blue: hsl(228, 100%, 84%);
+    --light-blue: hsl(206, 94%, 87%);
+    --strawberry-red: hsl(354, 84%, 57%);
+  
+    /* Neutral Colors */
+    --cool-gray: hsl(231, 11%, 63%);
+    --light-gray: hsl(229, 24%, 87%);
+    --magnolia: hsl(217, 100%, 97%);
+    --alabaster: hsl(231, 100%, 99%);
+    --white: hsl(0, 0%, 100%);
+  
+    /* widths*/
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+  
+  }
+  
+  @font-face {
+    font-family: mineOnly;
+    src: url(../public/fonts/Ubuntu-Medium.ttf);
+  }
+
+@media (max-width: 750px) {
+    body {
+      /* display: flex; */
+      position: relative;
+      height: 100vh;
+      margin: 0;
+      font-family: 'mineOnly', sans-serif;
+      color: var(--marine-blue);
+      background-color: hsla(228, 100%, 84%, 0.13);
+      /* background-color: aqua; */
+    }
+  
+    .stepWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      /* gap: 10%; */
+      background-image: url(../public/images/bg-sidebar-desktop.svg);
+      background-size: cover;
+      background-position: 25% 90%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 150px;
+  
+      padding-top: 20px;
+    }
+
+    .page {
+        /* position: relative; */
+    }
+
+    .infoWrapper {
+        position: absolute;
+        background-color: var(--white);
+        margin: 5%;
+        padding: 5%;
+        top: 10%;
+        border-radius: 10px;
+    }
+    .planWrapper {
+        position: absolute;
+        background-color: var(--white);
+        margin: 5%;
+        padding: 5%;
+        top: 10%;
+        border-radius: 10px;
+    }
+    .addsWrapper {
+        position: absolute;
+        background-color: var(--white);
+        margin: 5%;
+        padding: 5%;
+        top: 10%;
+        border-radius: 10px;
+        width: 80%;
+    }
+    .lastMsgCard {
+        position: absolute;
+        background-color: var(--white);
+        margin: 5%;
+        padding: 5%;
+        top: 14%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .cirStepActive {
+    color: var(--marine-blue);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(163, 184, 212);
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    .lastMsgCard p {
+      display: flex;
+      letter-spacing: .7px;
+      line-height: 1.6;
+      font-family: mineOnlyMed;
+      font-size: 18px;
+      text-align: center;
+      color: var(--cool-gray);
+    }
+    .stepTitle {
+      display: none;
+    }
+
+    .cirStep {
+      color: white;
+      border-radius: 50%;
+      height: 25px;
+      width: 25px;
+      border: 1px solid white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hide, .hideForMobile {
+        display: none;
+    } 
+    
+    .infoWrapper input {
+        width: 90%;
+        padding: 10px;
+        border-radius: 7px;
+        outline: none;
+        margin-bottom: 15px;
+        border: 1px solid var(--cool-gray);
+    }
+
+    .infoWrapper h2 {
+        font-size: 30px;
+        margin: 20px 0 20px 0;
+    }
+    
+    .infoWrapper p {
+        color: var(--cool-gray);
+        font-size: 14px;
+    }
+    
+
+
+    .btnNxtFrmInfo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 15px 30px 15px 30px;
+        margin: 10px;
+        background-color: var(--marine-blue);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .checkoutBtn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 15px 30px 15px 30px;
+        margin: 10px;
+        background-color: var(--purplish-blue);
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    .btnPrev {
+        right: 8%;
+        padding: 15px 30px 15px 30px;
+        margin: 10px;
+        background-color: var(--white);
+        color: gray;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .test1 {
+        position: absolute;
+        bottom: 0;
+        background-color: var(--white);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .errorMsg {
+      font-size: small;
+      color: red;
+      display: flex;
+      align-items: center;
+    }
+    .labelHolder {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px;
+    }
+
+    .planWrapper {
+      position: absolute;
+      background-color: var(--white);
+      margin: 5%;
+      padding: 5%;
+      top: 10%;
+      border-radius: 10px;
+    }
+    .offers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .offers img {
+      width: 35px;
+      height: 35px;
+    }
+    .test2 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: space-between;
+    }
+    .offerCard {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      height: auto;
+      border: 1px solid var(--pastel-blue);
+      border-radius: 10px;
+      padding: 20px 10px 20px 10px;
+      gap: 25px;
+      background-color: transparent;
+    }
+    .priceIs {
+      color: rgba(128, 128, 128, 0.479);
+    }
+    .billingSelect {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 10px 20px 0;
+      background-color: rgba(163, 184, 212, 0.288);
+      border-radius: 5px;
+      
+    }
+    .check {
+      background-color: rgba(107, 105, 240, 0.192);
+    }
+
+    .offerHolder {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .offer {
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid var(--cool-gray);
+      border-radius: 10px;
+      align-items: center;
+
+    }
+
+    .offerInfo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .infos {
+      margin: 0 10px;
+    }
+    .infos h3 {
+      font-size: 15px;
+      margin: 10px 0;
+    }
+    .infos p, .par {
+      font-size: 12px;
+      color: var(--cool-gray);
+      margin: 10px 0;
+    }
+    .par {
+      font-size: 14px;
+      color: var(--cool-gray);
+      margin: 10px 0;
+    }
+    .offerPrice {
+      color: var(--pastel-blue);
+      margin: 0 15px;
+      font-size: small;
+    }
+    .billingsWrapper {
+      background-color: rgba(248,249,254,255);
+      border-radius: 10px;
+      padding: 5px 10px;
+    }
+    .nameAndPrice {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      align-items: center;
+    }
+    .dd2 {
+      color: var(--cool-gray);
+      text-decoration: underline;
+    }
+
+    .totalPrice {
+      color: var(--purplish-blue)
+    }
+
+
+    .line {
+      display: flex;
+      /* border-radius: 10px; */
+      border: 0.5px solid rgba(0, 0, 0, 0.5); /* Softer black with transparency */
+      margin: 10px;
+      opacity: 0.6; /* Lower overall opacity for the element */
+      border-radius: 2px; /* Slightly rounded edges for a softer look */
+      background-color: rgba(0, 0, 0, 0.1)
+    }
+    .addsSelected {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 10px;
+    }
+      .addsOn {
+      color: var(--cool-gray);
+      font-size: smaller;
+    }
+    .offerChecked {
+      border: 1px solid rgb(107, 105, 240);
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      align-items: center;
+      /* padding: 10px 0; */
+      background-color: rgba(107, 105, 240, 0.295);
+    }
+
+    .mergMore {
+      padding: 25px 20px;
+    }
+    
+    .addsOnPrice {
+      color: rgb(57, 57, 155);
+    }
+  }
